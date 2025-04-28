@@ -7,21 +7,10 @@ function clearDisplay () {
 }
 
 function calculate () {
-    const display = document.getElementsById('display');
-        try {
+    const display = document.getElementById('display');
+    try {
         display.value = eval(display.value);
-        } catch {
-        display.value = "Error";
-        }
+    } catch {
+        display.value = 'Error';
+    }
 }
-
-// function calculate () {
-//     const display = document.getElementById('display');
-//     const  result = document.getElementById('result');
-//     try {
-//         display.value = eval(display.value)
-//     } catch {
-//         display.value = 'Error';
-//         }
-// }
-
